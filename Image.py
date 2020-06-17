@@ -85,7 +85,7 @@ def hough_line(canny):                                      # HÀM BIẾN ĐỔI
                 y1 = int(y0 + 1000 * (a))
                 x2 = int(x0 - 1000 * (-b))
                 y2 = int(y0 - 1000 * (a))
-                cv2.line(img_cp, (x1, y1), (x2, y2), (203, 192, 255), 1)    # vẽ đường thẳng qua 2 điểm
+                cv2.line(img_cp, (x1, y1), (x2, y2), (0, 0, 255), 2)    # vẽ đường thẳng qua 2 điểm
     return img_cp
 
 def hough_lineP(canny):             # HÀM HOUGH Probabilistic
